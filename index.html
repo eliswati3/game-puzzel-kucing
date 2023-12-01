@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: palevioletred;
+        height: 97vh;
+        padding: 0;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fifteen"></div>
+    <!--elemen "lima belas" di mana permainan akan berlangsung-->
+    <script>
+      var setup = {
+        puzzle_fifteen: {
+          diff: 300, // jumlah pergerakan slot untuk mengacak gambar
+          size: [512, 640], // ukuran elemen "lima belas" dalam piksel saja
+          grid: [3, 4], // banyaknya persegi pada tinggi dan lebar gambar
+          fill: true, // Disarankan untuk meregangkan area dengan game agar sesuai dengan elemen untuk layar penuh
+          number: false, // Nomor urut slot
+          gamePad: true,
+          art: {
+            url: "kucing.jpg", // jalur ke gambar (Anda dapat menggunakan format apa pun dari browser yang didukung, animasi gif svg)
+            ratio: false, // memperbesar gambar tinggi atau lebarnya
+          },
+          // optional elements
+          time: 0.1, // waktu animasi perpindahan blok
+          style: "border-radius:5px;", // gaya untuk puzzle persegi
+          keyBoard: true, // Kontrol menggunakan tombol pada keyboard
+        },
+      };
+    </script>
+    <script src="script.js"></script>
+    <!--path to file engine-->
+  </body>
+</html>
